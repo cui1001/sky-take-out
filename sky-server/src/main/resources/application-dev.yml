@@ -1,8 +1,11 @@
-sky:
+# 敏感配置（不提交 Git）
+spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    host: localhost
-    port: 3306
-    database: sky_take_out
-    username: root
-    password: root
+    druid:
+      username: root
+      password: Czf10018517
+
+sky:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    admin-secret-key: itcast
