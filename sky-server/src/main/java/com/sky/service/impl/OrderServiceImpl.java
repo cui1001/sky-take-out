@@ -68,6 +68,7 @@ public class OrderServiceImpl implements OrderService {
         orders.setStatus(Orders.PENDING_PAYMENT);
         orders.setNumber(String.valueOf(System.currentTimeMillis()));
         orders.setPhone(addressBook.getPhone());
+        orders.setAddress(addressBook.getDetail());
         orders.setConsignee(addressBook.getConsignee());
         orders.setUserId(userId);
 
